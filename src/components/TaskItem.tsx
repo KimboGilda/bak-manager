@@ -23,12 +23,14 @@ const TaskItem: React.FC<TaskItemProps> = ({task, onToggle, onDelete}) => {
           </span>
           </label>
         </div>
-        <button
-          className="bg-red-300 hover:bg-red-600 text-white text-xs px-2 py-1 rounded"
-          onClick={() => onDelete(task.id)}
-        >
-        delete
-       </button>
+        <div className="buttons">
+          <button
+            className="bg-red-300 hover:bg-red-600 text-white text-xs px-2 py-1 rounded"
+            onClick={() => onDelete(task.id)}
+          >
+          delete
+          </button>
+       </div>
       </div>  
     </>
   )
