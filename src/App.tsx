@@ -21,15 +21,6 @@ function App() {
     setTasks(prev => prev.filter(task => task.id !== id))
   }
 
-  const handleForm = ():Task => {
-    setShowForm(true);
-    return {
-      id: "",
-      title:"",
-      completed: false
-    }
-  };
-
   const handleAddNewTask = (title:string) => {
     console.log("adding a new task")
     const newTask:Task = {
